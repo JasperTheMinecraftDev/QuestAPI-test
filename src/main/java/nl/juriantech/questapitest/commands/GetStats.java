@@ -1,6 +1,6 @@
 package nl.juriantech.questapitest.commands;
 
-import nl.juriantech.questapi.Quest_API;
+import nl.juriantech.questapi.QuestAPI;
 import nl.juriantech.questapi.objects.Quest;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -11,9 +11,9 @@ import java.util.UUID;
 
 public class GetStats {
 
-    private final Quest_API api;
+    private final QuestAPI api;
 
-    public GetStats(Quest_API api) {
+    public GetStats(QuestAPI api) {
         this.api = api;
     }
 

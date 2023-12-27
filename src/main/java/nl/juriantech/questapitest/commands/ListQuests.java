@@ -1,14 +1,14 @@
 package nl.juriantech.questapitest.commands;
 
-import nl.juriantech.questapi.Quest_API;
+import nl.juriantech.questapi.QuestAPI;
 import org.bukkit.entity.Player;
 import revxrsal.commands.annotation.Command;
 
 public class ListQuests {
 
-    private final Quest_API api;
+    private final QuestAPI api;
 
-    public ListQuests(Quest_API api) {
+    public ListQuests(QuestAPI api) {
         this.api = api;
     }
 

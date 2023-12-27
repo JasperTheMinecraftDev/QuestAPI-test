@@ -1,17 +1,17 @@
 package nl.juriantech.questapitest;
 
-import nl.juriantech.questapi.Quest_API;
+import nl.juriantech.questapi.QuestAPI;
 import nl.juriantech.questapitest.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import revxrsal.commands.bukkit.BukkitCommandHandler;
 
 public final class QuestAPI_test extends JavaPlugin {
 
-    private Quest_API api;
+    private QuestAPI api;
 
     @Override
     public void onEnable() {
-        api = Quest_API.getPlugin(Quest_API.class);
+        api = QuestAPI.getPlugin(QuestAPI.class);
         BukkitCommandHandler commandHandler = BukkitCommandHandler.create(this);
 
         commandHandler.register(new CreateQuest(api));

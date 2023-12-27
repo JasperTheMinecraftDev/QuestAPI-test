@@ -1,15 +1,15 @@
 package nl.juriantech.questapitest.commands;
 
-import nl.juriantech.questapi.Quest_API;
+import nl.juriantech.questapi.QuestAPI;
 import nl.juriantech.questapi.objects.Quest;
 import org.bukkit.entity.Player;
 import revxrsal.commands.annotation.Command;
 
 public class LevelUp {
 
-    private final Quest_API api;
+    private final QuestAPI api;
 
-    public LevelUp(Quest_API api) {
+    public LevelUp(QuestAPI api) {
         this.api = api;
     }
 
