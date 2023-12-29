@@ -20,7 +20,7 @@ public class CreateQuest {
             return;
         }
 
-        Quest newQuest = new Quest(questId, maxLevels, api.getDatabase(), databaseUpdateIntervalSeconds);
+        Quest newQuest = new Quest(api, questId, maxLevels, api.getDatabase(), databaseUpdateIntervalSeconds);
         api.getQuestManager().addQuest(newQuest);
 
         player.sendMessage("Quest '" + questId + "' created successfully with " + maxLevels + " levels!");
